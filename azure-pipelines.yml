@@ -42,7 +42,7 @@ stages:
       displayName: 'Push Docker Image' 
       inputs:
         containerRegistry: 'registry'
-        repository: 'ssp-Backend'
+        repository: 'SSP-Backend'
         command: 'push'
         tags: |
           $(version)
