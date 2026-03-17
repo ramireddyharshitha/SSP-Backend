@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: registryharshi.azurecr.io/perseverance-project:VERSION
+        image: registryharshi.azurecr.io/SSP-Backend:VERSION
         imagePullPolicy: Always
         env:
           - name: DB_CONN_STR
