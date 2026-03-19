@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-api
-  namespace: three-tier1
+  namespace: three-tier
   labels:
     role: backend
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: registryharshi.azurecr.io/backend:VERSION
+        image: registrygharshi.azurecr.io/backend:VERSION
         imagePullPolicy: Always
         env:
           - name: DB_CONN_STR
@@ -41,7 +41,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: backend-service-api
-  namespace: three-tier1
+  namespace: three-tier
 spec:
   type: NodePort
   selector:
